@@ -1,0 +1,40 @@
+{
+  "name": "@ambiere/clsx",
+  "version": "0.0.0",
+  "description": "Making tailwind utility classes reusabilty and semantic html a breeze. Your styling woes is a thing of the past.",
+  "main": "src/index.js",
+  "type": "module",
+  "funding": "https://github.com/sponsors/ambiere",
+  "types": "./src/types/index.d.ts",
+  "exports": {
+    "types": "./src/types/index.d.js",
+    "default": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "./src/index.js",
+    "./src/types/index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambiere/clsx.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "nextjs",
+    "class",
+    "className"
+  ],
+  "author": {
+    "name": "Zidikhery Mchomvu",
+    "email": "itsambiere@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ambiere/clsx/issues"
+  },
+  "homepage": "https://github.com/ambiere/clsx#readme"
+}
