@@ -1,7 +1,7 @@
 import path from "path"
 import projectRootDir from "@ambiere/project-root"
 
-export default async function nextClsxConfig() {
+export default async function clsxConfig() {
   try {
     const rootDir = projectRootDir()
     if (rootDir) {
