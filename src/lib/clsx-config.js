@@ -7,7 +7,7 @@ export default async function nextClsxConfig() {
     if (rootDir) {
       const pathToConfigs = path.resolve(path.join(rootDir, "clsx.config.mjs"))
       const configs = await import(pathToConfigs)
-      if (configs) return configs
+      if (configs.default) return configs.default
     }
   } catch (error) {
     if (error.code === "ERR_MODULE_NOT_FOUND") {
@@ -17,4 +17,5 @@ export default async function nextClsxConfig() {
     return {}
   }
 }
+
 
