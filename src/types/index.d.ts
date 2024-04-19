@@ -105,7 +105,6 @@ export class NextClsxStore {
   private geRouteRootClsx(): GlobalClsx | {}
 }
 
-
 /**
  * Get next-clsx configurations
  * @returns { {} | NextClsxConfigs }
