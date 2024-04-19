@@ -31,37 +31,25 @@ export interface NextClsxConfigs {
 
 export type Clsx = {
   [index: string]: string | number | boolean | string[]
-}
+} | {}
 
 export interface ClsxObject {
   [index: string]: Clsx
 }
 
+export interface GlobalClsx {
+  clsx: Clsx,
+  configs?: StylesConfigs
+}
+
+export interface GlobalClsxObject extends GlobalClsx {
+  [index: string]: Clsx | StylesConfigs
+}
+
 export type Styles = {
   _configs_?: StylesConfigs,
   clsx: ClsxObject
-} | Clsx
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export type Root = string
-
-
-
-export type GlobalClsx = {
-  [index: string]: Clsx
-}
+} | ClsxObject
 
 
 /**
@@ -86,40 +74,37 @@ export class NextClsxStore {
 
   /**
    * Synchronously get all the next-clsx global styles
-   * @returns {GlobalClsx | {} | undefined} clsx 
+   * @returns { GlobalClsxObject | {} | undefined} clsx 
    * */
   prepareClsx(): GlobalClsx | {} | undefined
+
+  /**
+   * Update global styles based on route styles configurations
+   * */
   processClsx(): void
+
   /**
    * Synchronously read global styles
-   * @param {string} path
-   * @returns {Clsx | undefined}
-   * @private
+   * @param {string} clsxPath
+   * @returns { Styles | undefined}
    * */
-  private readClsxSync(path: string): Clsx | undefined
+  private readClsxSync(clsxPath: string): Styles | undefined
 
   /**
-   * Asynchronously import global styles
-   * @param {string} path 
-   * @returns {Promise<Clsx | undefined>}
+   * Synchronously get root global styles if defined
+   * @returns { ClsxObject | undefined }
    * @private
    * */
-  private readClsx(path: string): Promise<Clsx | undefined>
+  private getRootClsx(): ClsxObject | undefined
 
   /**
-   * Asynchronously get root global styles if defined
-   * @returns {Promise<{root: Clsx | undefined}>}
+   * Synchronously get route global styles
+   * @returns { GlobalClsx | {} }>}
    * @private
    * */
-  private getRootClsx(): Promise<{ root: Clsx | undefined }>
-
-  /**
-   * Asynchronously get route global styles to be merged with root global styles
-   * @returns {Promise<{[index:string]: Clsx | undefined}>}
-   * @private
-   * */
-  private geRouteRootClsx(): { [index: string]: Clsx | undefined }
+  private geRouteRootClsx(): GlobalClsx | {}
 }
+
 
 /**
  * Get next-clsx configurations
