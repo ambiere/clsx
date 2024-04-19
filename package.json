@@ -1,13 +1,13 @@
 {
-  "name": "@ambiere/clsx",
+  "name": "@ambiere/next-clsx",
   "version": "0.0.0",
-  "description": "Making tailwind utility classes reusabilty and semantic html a breeze. Your styling woes is a thing of the past.",
+  "description": "Making styles reusabilty and mainteinance a breeze. Your styling woes is a thing of the past.",
   "main": "src/index.js",
   "type": "module",
   "funding": "https://github.com/sponsors/ambiere",
   "types": "./src/types/index.d.ts",
   "exports": {
-    "types": "./src/types/index.d.js",
+    "types": "./src/types/index.d.ts",
     "default": "./src/index.js"
   },
   "scripts": {
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ambiere/clsx.git"
+    "url": "git+https://github.com/ambiere/next-clsx.git"
   },
   "keywords": [
     "tailwindcss",
@@ -34,7 +34,11 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ambiere/clsx/issues"
+    "url": "https://github.com/ambiere/next-clsx/issues"
   },
-  "homepage": "https://github.com/ambiere/clsx#readme"
+  "homepage": "https://github.com/ambiere/next-clsx#readme",
+  "dependencies": {
+    "@ambiere/project-root": "^0.1.3",
+    "@ambiere/to-object": "^0.3.0"
+  }
 }
