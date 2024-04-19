@@ -1,0 +1,23 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@ambiere/project-root':
+    specifier: ^0.1.3
+    version: 0.1.3
+  '@ambiere/to-object':
+    specifier: ^0.3.0
+    version: 0.3.0
+
+packages:
+
+  /@ambiere/project-root@0.1.3:
+    resolution: {integrity: sha512-PQSaobnDYU+cYz1HUIjh/KOA2jzZKcS//gNbvQoDtlXzS6Wxu+M7rA4L/f0WDlbw/m87Bu6H6V3Jpneoy31HaQ==}
+    dev: false
+
+  /@ambiere/to-object@0.3.0:
+    resolution: {integrity: sha512-JwqupuRK7W0+gRKF21RO6d97BroX7tkCre/NDllS2ciPbvTzGIClwt2SWpILJyN9uMdO/T/V+slITjLc3VS5hg==}
+    dev: false
