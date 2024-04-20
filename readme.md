@@ -23,3 +23,10 @@ Below are the available configuration options:
 - Default: `[]`
 - Value(s): Array<[RouteObject](#src/docs/routeobject)>
 - Description: Allow you to specify routes with route-level global styles.
+
+## License
+
+[MIT license][MIT]
+
+[MIT]: https://github.com/ambiere/next-clsx/blob/main/license
+
