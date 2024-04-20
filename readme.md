@@ -21,5 +21,5 @@ Below are the available configuration options:
 - Type: `Array`
 - Optional: `true`
 - Default: `[]`
-- Value(s): [RouteObject](#src/docs/routeobject)[]
+- Value(s): Array<[RouteObject](#src/docs/routeobject)>
 - Description: Allow you to specify routes with route-level global styles.
