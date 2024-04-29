@@ -5,7 +5,7 @@ simplifying maintenance tasks.brnext-clsx provide several
 configuration options to customize the behavior of next-clsx
 according to your project's requirements.
 
- Configuration file name convention: `clsx.config.mjs`
+>Configuration file name convention: `clsx.config.mjs`
 
 The configuration file should be at the root of the project and
 below are the available configuration options:
