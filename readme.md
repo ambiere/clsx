@@ -26,8 +26,9 @@ clsx.config.mjs:
                      Type: Array
                      ArrayValue: <RouteObject>
 }
+```
 
-                      .........
+```txt
 RouteObject:
 
 {
