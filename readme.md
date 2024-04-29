@@ -27,6 +27,7 @@ below are the available configuration options:
       }
     ]
 }
+```
 
 >routeRoot:
 
