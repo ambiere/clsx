@@ -11,11 +11,16 @@ Below are the available configuration options:
 
 ```txt
 root                                  Specify the absolute path to root global styles
-                                      Default: <"./app/ui/style/">
-                                      Optional: <true>
-                                      Type: <string>
+                                      Default: "./app/ui/style/"
+                                      Optional: true
+                                      Type: string
 
-routeRoot                             specify rout
+routeRoot -------------------------   Specify routes with route-level global styles.
+                                      Default: []
+                                      Optional: true
+                                      Type: Array
+
+                                      ArrayValue: <RouteObject>
 
 
 ```
