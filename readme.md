@@ -85,11 +85,20 @@ Default next-clsx configuration
 
 Possible next-clsx configuration
 
+```txt
 Project  structure:
 
-:
 
+    app
+   ├── dashboard
+   │   ├── components
+   │   └── ui
+   ├── settings
+   └── ui
+       ├── omponents
+       └── style
 
+```
 
 ## License
 
