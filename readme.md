@@ -23,21 +23,51 @@ routeRoot      Specify routes with route-level global styles.
 ```
 
 
-
-#### `root`
+## RouteObject
+##### `route`
 
 - Type: `string`
-- Optional: `true`
-- Default: `./app/ui/style/`
-- Description: Allow you to specify the absolute path to root global styles.
+- Description: Absolute path to the route root
 
-#### `routeRoot`
+##### `root`
 
-- Type: `Array`
 - Optional: `true`
-- Default: `[]`
-- Value(s): Array<[RouteObject](#RouteObject)>
-- Description: Allow you to specify routes with route-level global styles.
+- Default: `project-root/path/to/route/ui/styles/`
+- Description: Absolute path to the route-level global styles for a given route
+
+##### `replaceRoot`
+
+- Default: `true`
+- Optional: `true`
+- Description: All the styles in root global files with the same key as those
+in route-level global styles and/or local styles will be replaced
+and if does not exist, will be defined in global files and will only be accessible
+by the route itself. If you want to opt out of this behavior you need to specify how should
+the local styles and/or route-level global styles be handled with either
+`overrideRoot` or `mergeWithRoot` options, hence,`replaceRoot` will automatically
+be set to false, no need to explicit set it to false.
+
+##### `mergeWithRoot`
+
+- Default: `false`
+- Optional: `true`
+- Description: All the styles in root global files with the same key as those
+in local styles and/or route-level global styles will be merged
+and if does not exist, will be defined in global files and will only be accessible
+by the route itself.
+
+##### `overrideRoot`
+
+- Default: `false`
+- Optional: `true`
+- Description: All the styles in root global files will be overridden with local styles
+and/or route-level global styles.
+
+Precedence:
+
+`configs.overridden` > `configs.mergeWithRoot` > `configs.overrideRoot`
+
+
 
 ## License
 
