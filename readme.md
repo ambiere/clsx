@@ -1,11 +1,11 @@
 ## Configuration
 
 To enhance styling workflow, improving reusability and
-simplifying maintenance tasks.<br>next-clsx provide several
+simplifying maintenance tasks.brnext-clsx provide several
 configuration options to customize the behavior of next-clsx
 according to your project's requirements.
 
-> Configuration file name convention: `clsx.config.mjs`
+ Configuration file name convention: `clsx.config.mjs`
 
 The configuration file should be at the root of the project and
 below are the available configuration options:
@@ -29,18 +29,21 @@ below are the available configuration options:
 }
 ```
 
->routeRoot:
+### routeRoot
 
-### <route>
+### route
+
 Absolute path to the route root
 Type: string
 
-### <root>
+### root
+
 Absolute path to the route-level global styles for a given route
 Default: "project-root/path/to/route/ui/styles/"
 Optional: true
 
-### <replaceRoot>
+### replaceRoot
+
 All the styles in root global files with the same key as those
 in route-level global styles and/or local styles will be replaced
 and if does not exist, will be defined in global files and will only
@@ -53,7 +56,8 @@ explicit set it to false.
 Default: true
 Optional: true
 
-### <mergeWithRoot>
+### mergeWithRoot
+
 All the styles in root global files with the same key as those
 in local styles and/or route-level global styles will be merged
 and if does not exist, will be defined in global files and will
@@ -62,7 +66,8 @@ only be accessible by the route itself.
 Default: false
 Optional: true
 
-### <overrideRoot>
+### overrideRoot
+
 All the styles in root global files will be overridden with local styles
 and/or route-level global styles.
 
@@ -73,7 +78,7 @@ Optional: true
 
 Precedence:
 
-`overrideRoot` > `mergeWithRoot` > `overrideRoot`
+`overrideRoot`  `mergeWithRoot` > `overrideRoot`
 
 
 Default next-clsx configuration
